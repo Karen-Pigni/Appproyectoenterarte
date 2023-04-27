@@ -44,7 +44,7 @@ Metodologías ágiles.
   
 ## Wiki 📖
 
-Pueden encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/FranGemo1/proyectoenterarte.wiki.git)  
+Pueden encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/FranGemo1/proyectoenterarte/wiki)  
 Documentación de reuniones.
 
 ## Autores ✒️
