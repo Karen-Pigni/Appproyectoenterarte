@@ -36,11 +36,11 @@ El sitio web de nuestra organización hecho en Wordpress: [ENTERspace](http://en
 
 ## Construido con 🛠️
 
-HTML5, CSS, Bootstrap y JS.
-TypeScript y Angular,
-Python y MySQL.  
-GIT.  
-Metodologías ágiles.
+HTML5, CSS, Bootstrap y JS.  
+TypeScript y Angular,  
+Python y MySQL.    
+GIT.    
+Metodologías ágiles.  
   
 ## Wiki 📖
 
