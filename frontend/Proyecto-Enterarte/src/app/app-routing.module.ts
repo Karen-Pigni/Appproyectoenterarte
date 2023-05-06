@@ -11,18 +11,18 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegistroComponent } from './auth/registro/registro.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  {
-    path: 'events',
-    component: EventsComponent,
-    children: [{ path: 'event', component: EventItemComponent }],
-  },
-  { path: 'create-event', component: CreateEventComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'profile-user', component: ProfileUserComponent },
-  { path: 'login', component: LoginComponent },
+
+  {path: 'home', component: HomeComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'events', component: EventsComponent, children:[
+    {path: 'event', component: EventItemComponent}
+  ]},
+  {path: 'create-event', component: CreateEventComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'profile-user', component: ProfileUserComponent},
+  {path: 'login', component: LoginComponent},
   { path: 'registro', component: RegistroComponent },
-  { path: '**', component: Error404Component, pathMatch: 'full' },
+  {path:'**', component: Error404Component, pathMatch: "full"}  
 ];
 
 @NgModule({
