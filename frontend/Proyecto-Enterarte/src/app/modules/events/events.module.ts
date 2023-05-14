@@ -7,6 +7,7 @@ import { CategoryFilterPipe } from './pipes/category-filter.pipe';
 
 
 
+
 @NgModule({
   declarations: [
     EventItemComponent,
