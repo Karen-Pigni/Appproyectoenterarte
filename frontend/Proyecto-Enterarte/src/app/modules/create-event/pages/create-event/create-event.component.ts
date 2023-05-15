@@ -5,6 +5,7 @@ import { EventsService } from 'src/app/modules/events/services/events.service';
 import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 
+declare var $:any;
 
 @Component({
   selector: 'app-create-event',
@@ -13,9 +14,11 @@ import { Router } from '@angular/router';
 })
 export class CreateEventComponent implements OnInit {
 
-
+  faCircleCheck= faCircleCheck;
   eventForm !: FormGroup;
   invalidForm : boolean = false;
+
+  event:any;
 
 
   patternURL:string = "[-a-zA-Z0-9@:%_\\+.~#?&//=]{2,256}\\.[a-z]{2,4}\\b(\\/[-a-zA-Z0-9@:%_\\+.~#?&//=]*)?"
@@ -55,12 +58,13 @@ export class CreateEventComponent implements OnInit {
     if(this.eventForm.invalid) {
     this.invalidForm=true     
     } else {     
-      const event = this.eventForm.value;   
-      this.eventService.addEvent(event).subscribe( {
+      this.event = this.eventForm.value;   
+      this.eventService.addEvent(this.event).subscribe( {
         next: () => {
           this.eventForm.reset();
           this.invalidForm = false;
-          this.route.navigate(['/events'])
+          $('#modal-confirmacion').modal('show')
+          this.route.navigate(['/events'])          
         }, error: () => {
           console.log("Error: El evento no pudo ser creado")
         }
@@ -71,6 +75,7 @@ export class CreateEventComponent implements OnInit {
 
   hideErrorMessage () {   
     this.invalidForm=false;
+    
     
   } 
 

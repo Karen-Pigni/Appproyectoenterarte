@@ -24,6 +24,12 @@ label {
     color: #EB6E80;
 }
 
+fa-icon {
+    font-size:3em; 
+    color:rgb(36, 95, 184); 
+    padding: 7px;
+}
+
 
 .formularioEvent form button {    
     margin-top: 40px; 

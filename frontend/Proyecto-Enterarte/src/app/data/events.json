@@ -331,6 +331,57 @@
       "website": "",
       "image": "C:\\fakepath\\Alternativa Foto Currículum 2022.jpg",
       "id": "jhJDtNY"
+    },
+    {
+      "name": "Carrozas de Fuego",
+      "date": "2023-05-05T22:08",
+      "price": "10000",
+      "category": "semanal",
+      "gender": "Artes visuales",
+      "description": "Carrozas en llamassssss",
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "street": "Fitz Roy",
+      "number": "2184",
+      "instagram": "",
+      "facebook": "",
+      "website": "",
+      "image": "C:\\fakepath\\Frente DNI.jpeg",
+      "id": "27lss7L"
+    },
+    {
+      "name": "asd",
+      "date": "2023-05-04T22:09",
+      "price": "asd",
+      "category": "semanal",
+      "gender": "Música",
+      "description": "asd",
+      "province": "asd",
+      "city": "asd",
+      "street": "asd",
+      "number": "asd",
+      "instagram": "",
+      "facebook": "",
+      "website": "",
+      "image": "C:\\fakepath\\Alternativa Foto Currículum 2022.jpg",
+      "id": "f6X0cL_"
+    },
+    {
+      "name": "asdas",
+      "date": "2023-05-19T22:10",
+      "price": "asdas",
+      "category": "evento",
+      "gender": "Teatro",
+      "description": "asd",
+      "province": "Cordoba",
+      "city": "Cordoba",
+      "street": "Fitz Roy",
+      "number": "2184",
+      "instagram": "",
+      "facebook": "",
+      "website": "",
+      "image": "C:\\fakepath\\Alternativa Foto Currículum 2022.jpg",
+      "id": "OPwIMAK"
     }
   ]
 }
