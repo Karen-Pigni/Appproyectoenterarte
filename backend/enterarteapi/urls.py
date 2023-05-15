@@ -1,12 +1,12 @@
 from .views import responseViewSet
 
-router.register('api/response', responseViewSet)
+path.data('api/response', responseViewSet)
 
 from django.urls import path, include
-from rest_framework import routers
-from .views2 import responseViewSet
+# from rest_framework import routers
+from .views import responseViewSet
 
-router = routers.DefaultRouter()
+router = path.DefaultRouter()
 router.register('response', responseViewSet)
 
 urlpatterns = [
@@ -14,7 +14,7 @@ urlpatterns = [
 ]
 
 from django.urls import path
-from .views2 import responseList, responseDetail
+from .views import responseList, responseDetail
 
 urlpatterns = [
     path('response/', responseList.as_view()),
