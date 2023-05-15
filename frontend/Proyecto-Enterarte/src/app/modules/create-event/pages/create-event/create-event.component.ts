@@ -56,12 +56,16 @@ export class CreateEventComponent implements OnInit {
     this.invalidForm=true     
     } else {     
       const event = this.eventForm.value;   
-      this.eventService.addEvent(event).subscribe();
-      this.eventForm.reset();
-      this.invalidForm = false;
-      this.route.navigate(['/events'])
-        
-    
+      this.eventService.addEvent(event).subscribe( {
+        next: () => {
+          this.eventForm.reset();
+          this.invalidForm = false;
+          this.route.navigate(['/events'])
+        }, error: () => {
+          console.log("Error: El evento no pudo ser creado")
+        }
+      })  
+
     }
   } 
 
