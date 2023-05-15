@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'enterarteapi'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'enterarteback.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/wamp64/www/projet/ISPC/Segundo-año/Primer-cuatrimestre/pi-enterarte/proyectoenterarte/backend/enterarteapi/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

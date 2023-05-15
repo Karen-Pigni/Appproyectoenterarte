@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from enterarteapi.views import list_event, create_event, update_event, delete_event
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('list_event/', list_event, name='list_events'),
+    path('create_event/', create_event, name='create_event'),
+    path('update_event/<int:pk>/', update_event, name='update_event'),
+    path('delete_event/<int:pk>/', delete_event, name='delete_event'),
 ]

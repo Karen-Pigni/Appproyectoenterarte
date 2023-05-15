@@ -18,5 +18,5 @@ from .views import responseList, responseDetail
 
 urlpatterns = [
     path('response/', responseList.as_view()),
-    path('response/<int:pk>/', responseDetail.as_view()),
+    path('response/<int:pk>/', responseDetail.as_view())
 ]
