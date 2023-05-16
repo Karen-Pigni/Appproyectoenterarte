@@ -55,7 +55,7 @@ ROOT_URLCONF = 'enterarteback.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/wamp64/www/projet/ISPC/Segundo-año/Primer-cuatrimestre/pi-enterarte/proyectoenterarte/backend/enterarteapi/templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,6 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'USER': 'username',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
