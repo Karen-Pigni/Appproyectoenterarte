@@ -1,30 +1,57 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventsComponent } from './components/events/events.component';
-import { EventItemComponent } from './components/event-item/event-item.component';
-import { CreateEventComponent } from './components/create-event/create-event.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProfileUserComponent } from './components/profile-user/profile-user.component';
-import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './components/home/home.component';
-import { Error404Component } from './components/error404/error404.component';
+import { HomeComponent } from './modules/home/pages/home/home.component';
 
 const routes: Routes = [
 
-  {path: 'home', component: HomeComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'events', component: EventsComponent, children:[
-    {path: 'event', component: EventItemComponent}
-  ]},
-  {path: 'create-event', component: CreateEventComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'profile-user', component: ProfileUserComponent},
-  {path: 'login', component: LoginComponent},
-  {path:'**', component: Error404Component, pathMatch: "full"}  
+  {
+    path: 'home', 
+    component: HomeComponent
+  },
+  {
+    path: 'events', 
+    loadChildren: () =>
+      import('./modules/events/events.module').then((m) => m.EventsModule)   
+  },
+  {
+    path: 'create-event', 
+    loadChildren: () =>
+      import('./modules/create-event/create-event.module').then((m) => m.CreateEventModule)   
+  },
+  {
+    path: 'about', 
+    loadChildren: () =>
+      import('./modules/about/about.module').then((m) => m.AboutModule)   
+  },
+  {
+    path: 'profile-user', 
+    loadChildren: () =>
+      import('./modules/profile-user/profile-user.module').then((m) => m.ProfileUserModule)   
+  },
+  {
+    path: 'login', 
+    loadChildren: () =>
+      import('./modules/auth/auth.module').then((m) => m.AuthModule)   
+  },  
+  {
+    path: 'cart', 
+    loadChildren: () =>
+      import('./modules/cart/cart.module').then((m) => m.CartModule)   
+  }, 
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },  
+  {
+    path:'**',  
+    loadChildren: () =>
+      import('./modules/error404/error404.module').then((m) => m.Error404Module)
+  }  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
