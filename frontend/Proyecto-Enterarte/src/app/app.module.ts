@@ -13,6 +13,8 @@ import { HomeComponent } from './components/home/home.component';
 import { Error404Component } from './components/error404/error404.component';
 import { RegistroComponent } from './auth/registro/registro.component';
 import { LoginComponent } from './components/login/login.component';
+import { CommonModule } from '@angular/common';
+import { HomeService } from './components/home/home.service';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,9 @@ import { LoginComponent } from './components/login/login.component';
     Error404Component,
     RegistroComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, CommonModule],
+  providers: [HomeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+export class HomeModule {}
