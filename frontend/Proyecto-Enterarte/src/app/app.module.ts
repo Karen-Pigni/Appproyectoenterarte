@@ -14,11 +14,14 @@ import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent   
+    FooterComponent,
   ],
   imports: [
     BrowserModule, 
