@@ -12,16 +12,14 @@ import { Error404Module } from './modules/error404/error404.module';
 import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { HomeService } from './modules/home/pages/home/home.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent   
-  ],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
     AboutModule,
     AuthModule,
@@ -30,7 +28,8 @@ import { ProfileUserModule } from './modules/profile-user/profile-user.module';
     Error404Module,
     EventsModule,
     HomeModule,
-    ProfileUserModule
+    ProfileUserModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
