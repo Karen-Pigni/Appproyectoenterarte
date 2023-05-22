@@ -14,8 +14,16 @@ import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
+  ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     AboutModule,
     AuthModule,
@@ -25,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     EventsModule,
     HomeModule,
     ProfileUserModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
