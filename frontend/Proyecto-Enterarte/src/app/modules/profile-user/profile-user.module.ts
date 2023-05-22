@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProfileUserRoutingModule } from './profile-user-routing.module';
 import { ProfileUserComponent } from './pages/profile-user/profile-user.component';
 
+<<<<<<< HEAD
 
 @NgModule({
   declarations: [
@@ -15,3 +16,10 @@ import { ProfileUserComponent } from './pages/profile-user/profile-user.componen
   ]
 })
 export class ProfileUserModule { }
+=======
+@NgModule({
+  declarations: [ProfileUserComponent],
+  imports: [CommonModule, ProfileUserRoutingModule],
+})
+export class ProfileUserModule {}
+>>>>>>> develop
