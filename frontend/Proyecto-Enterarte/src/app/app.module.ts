@@ -13,11 +13,7 @@ import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { HomeService } from './modules/home/pages/home/home.service';
 
-@NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,7 +25,7 @@ import { HomeService } from './modules/home/pages/home/home.service';
     EventsModule,
     HomeModule,
     ProfileUserModule,
-    CommonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
