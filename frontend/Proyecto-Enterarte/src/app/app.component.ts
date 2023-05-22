@@ -8,5 +8,5 @@ import { UserService } from './modules/profile-user/services/user.service';
 })
 export class AppComponent {
   title = 'Proyecto-Enterarte';
-  
+
 }
