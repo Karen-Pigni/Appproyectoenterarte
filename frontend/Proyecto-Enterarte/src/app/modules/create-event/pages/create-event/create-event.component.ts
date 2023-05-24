@@ -4,6 +4,7 @@ import { Event } from 'src/app/modules/events/interfaces/event';
 import { EventsService } from 'src/app/modules/events/services/events.service';
 import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -61,6 +62,11 @@ export class CreateEventComponent implements OnInit {
           this.eventForm.reset();
           this.invalidForm = false;
           this.route.navigate(['/events'])
+          Swal.fire(
+            'Evento creado',
+            '¡El evento ha sido creado con éxito!',
+            'success'
+          )
         }, error: () => {
           console.log("Error: El evento no pudo ser creado")
         }
