@@ -2,34 +2,34 @@
     {"response":
     [
 {   "id":"1",
-    "evento":"Cuento",
-    "monto":"$500",
-    "fecha":"",
-    "hora":""
+    "evento":"Los Palmeras",
+    "monto":"$2500",
+    "fecha":"26/5/2023",
+    "hora":"20:30 hs"
 },
 {   "id":"2",
-    "evento":"Pintura",
-    "monto":"$600",
-    "fecha":"",
-    "hora":""
+    "evento":"Miranda",
+    "monto":"$3600",
+    "fecha":"27/5/2023",
+    "hora":"21 hs"
 },
 {   "id":"3",
-    "evento":"Deporte",
-    "monto":"$400",
-    "fecha":"",
-    "hora":""
+    "evento":"Tan Bionica",
+    "monto":"$2400",
+    "fecha":"28/5/2023",
+    "hora":"20 hs"
 },
 {   "id":"4",
     "evento":"Stand up",
-    "monto":"$400",
-    "fecha":"",
-    "hora":""
+    "monto":"$500",
+    "fecha":"29/5/2023",
+    "hora":"19 hs"
 },
 {   "id":"5",
-    "evento":"Musica",
-    "monto":"$800",
-    "fecha":"",
-    "hora":""
+    "evento":"Circo de solei",
+    "monto":"$3800",
+    "fecha":"30/5/2023",
+    "hora":"19 hs"
 }
 
 
