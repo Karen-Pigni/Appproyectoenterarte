@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Event } from 'src/app/modules/events/interfaces/event';
+
 import { EventsService } from 'src/app/modules/events/services/events.service';
-import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+
 import { Router } from '@angular/router';
 
 declare var $:any;
@@ -13,10 +13,8 @@ declare var $:any;
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
-
-  faCircleCheck= faCircleCheck;
-  eventForm !: FormGroup;
-  invalidForm : boolean = false;
+ eventForm !: FormGroup;
+invalidForm : boolean = false;
 
   event:any;
 
