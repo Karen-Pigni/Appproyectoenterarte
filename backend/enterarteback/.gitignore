@@ -1,0 +1,16 @@
+# Entorno virtual (por ejemplo, venv, env, virtualenv)
+venv/
+env/
+virtualenv/
+.venv/
+
+# Dependencias instaladas por pip
+/lib/
+/include/
+/bin/
+/pyvenv.cfg
+pip-selfcheck.json
+
+# Archivos generados por pip
+pip-log.txt
+requirements.txt

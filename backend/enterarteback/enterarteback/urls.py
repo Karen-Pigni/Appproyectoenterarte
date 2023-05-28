@@ -20,8 +20,8 @@ from enterarteapp.views import list_event, create_event, update_event, delete_ev
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('../template/list_event/', list_event, name='list_events'),
-    path('../template/create_event/', create_event, name='create_event'),
-    path('../template/update_event/<int:pk>/', update_event, name='update_event'),
-    path('../template/delete_event/<int:pk>/', delete_event, name='delete_event'),
+    path('../list_event.html/', list_event, name='list_events'),
+    path('../create_event.html/', create_event, name='create_event'),
+    path('../update_event.html/<int:pk>/', update_event, name='update_event'),
+    path('../delete_event.html/<int:pk>/', delete_event, name='delete_event'),
 ]

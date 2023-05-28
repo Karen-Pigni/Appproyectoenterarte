@@ -41,3 +41,5 @@ def delete_event(request, pk):
         return redirect('list_events')
     context = {'event': event}
     return render(request, 'delete_event.html', context)
+
+
