@@ -13,6 +13,7 @@ import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HistorialCompraService } from './services/historial-compra.service';
 
 
 
@@ -39,7 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProfileUserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HistorialCompraService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

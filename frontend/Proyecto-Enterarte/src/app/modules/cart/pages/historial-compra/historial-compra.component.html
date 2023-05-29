@@ -1,7 +1,7 @@
 
 <section class="record">
     <div>
-        <table *ngIf="HistorialCompra">
+        <table *ngIf="mostrarHistorial">
             <thead>
                     
                     <th>Evento</th>
@@ -9,10 +9,10 @@
                     <th>Fecha</th>
                     <th>hora</th>
             </thead>
-            <tr *ngFor="let element of Historial">
+            <tr *ngFor="let element of historialA">
                 <td>{{element.evento}}</td>
                 <td>{{element.monto|currency}}</td>
-                <td>{{today|date: "d/M/yy"}}</td>
+                <td>{{element.fecha}}</td>
                 <td>{{element.hora}}</td>
                     
             </tr>

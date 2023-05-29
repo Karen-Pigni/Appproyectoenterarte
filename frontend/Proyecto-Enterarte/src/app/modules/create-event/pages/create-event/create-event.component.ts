@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Event } from 'src/app/modules/events/interfaces/event';
+
 import { EventsService } from 'src/app/modules/events/services/events.service';
-import {faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
@@ -13,10 +13,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
-
-
   eventForm !: FormGroup;
   invalidForm : boolean = false;
+
 
 
   patternURL:string = "[-a-zA-Z0-9@:%_\\+.~#?&//=]{2,256}\\.[a-z]{2,4}\\b(\\/[-a-zA-Z0-9@:%_\\+.~#?&//=]*)?"
