@@ -4,8 +4,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EventsService } from 'src/app/modules/events/services/events.service';
 
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
-declare var $:any;
 
 @Component({
   selector: 'app-create-event',
@@ -13,10 +13,9 @@ declare var $:any;
   styleUrls: ['./create-event.component.css']
 })
 export class CreateEventComponent implements OnInit {
- eventForm !: FormGroup;
-invalidForm : boolean = false;
+  eventForm !: FormGroup;
+  invalidForm : boolean = false;
 
-  event:any;
 
 
   patternURL:string = "[-a-zA-Z0-9@:%_\\+.~#?&//=]{2,256}\\.[a-z]{2,4}\\b(\\/[-a-zA-Z0-9@:%_\\+.~#?&//=]*)?"
@@ -56,13 +55,17 @@ invalidForm : boolean = false;
     if(this.eventForm.invalid) {
     this.invalidForm=true     
     } else {     
-      this.event = this.eventForm.value;   
-      this.eventService.addEvent(this.event).subscribe( {
+      const event = this.eventForm.value;   
+      this.eventService.addEvent(event).subscribe( {
         next: () => {
           this.eventForm.reset();
           this.invalidForm = false;
-          $('#modal-confirmacion').modal('show')
-          this.route.navigate(['/events'])          
+          this.route.navigate(['/events'])
+          Swal.fire(
+            'Evento creado',
+            '¡El evento ha sido creado con éxito!',
+            'success'
+          )
         }, error: () => {
           console.log("Error: El evento no pudo ser creado")
         }
@@ -73,7 +76,6 @@ invalidForm : boolean = false;
 
   hideErrorMessage () {   
     this.invalidForm=false;
-    
     
   } 
 

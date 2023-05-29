@@ -20,6 +20,7 @@ import { HistorialCompraService } from './services/historial-compra.service';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
