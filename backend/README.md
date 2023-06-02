@@ -2,12 +2,12 @@
 ### BackEnd:
 
 
-Luego de clonar el repositorio sera necesario crear un entorno virtual, por lo que es necesario instalar virtualenv con el siguiente comando
+Luego de clonar el repositorio sera necesario crear un entorno virtual, por lo que es necesario instalar virtualenv:
 
 ```
 pip install virtualenv
 ```
-Le decimos a Python que vamos a usar un entorno virtual y que cree la carpeta “venv“ para contenerlo
+Le decimos a Python que vamos a usar un entorno virtual y que cree la carpeta “venv“ para contenerlo:
 ```
 python -m virtualenv venv
 ```
@@ -37,13 +37,8 @@ docker exec -it mysql bash
 ```
 mysql -u root -p 
 ```
-Y ahora nos deberia pedir la contraseña
+Nos deberia pedir la contraseña.
 
-![image](https://user-images.githubusercontent.com/85143329/234152149-9a2936c8-60d0-4cdf-8436-f37915052e4c.png)
-
-una vez que ingresemos la contraseña accederemos a la base de datos por comando y debemos ver algo similar a esto 
-
-![image](https://user-images.githubusercontent.com/85143329/234152449-479781cf-98ca-4f7b-b9ca-abb8be681020.png)
 
 En el bash de MySQL ejecutamos los siguientes comandos
 ```
