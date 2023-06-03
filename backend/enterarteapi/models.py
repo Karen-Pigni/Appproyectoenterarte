@@ -6,6 +6,9 @@ class Event(models.Model):
     location = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=5, decimal_places=2)
 
+    def __unicode__(self):
+        return self.title
+    
     def __str__(self):
         return self.title
 
