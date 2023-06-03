@@ -1,4 +1,10 @@
+import random
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.exceptions import ValidationError
+
+
+
 
 class Event(models.Model):
     title = models.CharField(max_length=100)
@@ -15,11 +21,7 @@ class Event(models.Model):
 class Meta:
         app_label = 'enterarteapi',
         
-        
-import random
-from django.db import models
-from django.core.validators import MinValueValidator, MaxValueValidator
-from django.core.exceptions import ValidationError
+
 
 # Create your models here.
 
