@@ -13,20 +13,21 @@ import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
 import { ProfileUserModule } from './modules/profile-user/profile-user.module';
 import { HttpClientModule } from '@angular/common/http';
-
-
-
-
-
+import { HistorialCompraService } from './services/historial-compra.service';
+import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RegistroComponent,
+    LoginComponent,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     AppRoutingModule,
     AboutModule,
     AuthModule,
@@ -36,9 +37,11 @@ import { HttpClientModule } from '@angular/common/http';
     EventsModule,
     HomeModule,
     ProfileUserModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [HistorialCompraService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+export class RegistroModule {}
