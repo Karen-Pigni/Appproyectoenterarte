@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./registro.component.css'],
 })
 export class RegistroComponent implements OnInit {
-  registerForm?: FormGroup;
+  registerForm!: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
   ngOnInit() {
