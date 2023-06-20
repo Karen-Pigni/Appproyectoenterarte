@@ -29,3 +29,4 @@ django-environ==0.10.0
 django-cors-headers==3.14.0
 psycopg2==2.9.6
 stripe==5.4.0
+

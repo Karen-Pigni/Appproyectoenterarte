@@ -20,6 +20,7 @@ python -m virtualenv env
    
 
 3. Quitar el ".dist" del titulo de del archivo `.env` dentro de la carpeta "core" y completar los campos con varibles de entorno de preferencia y las API Keys necesarias.
+>>>>>>> develop
 
 Con el entorno virtual activado, debemos intalar DJANGO y las librerias necesarias para el proyecto
 
@@ -36,6 +37,7 @@ pip install django djangorestframework django-cors-headers mysqlclient pillow dj
 
 
 Para poder ejecutar el stack de backend, ademas de contar con Python instalado, es necesario una base de datos MySQL corriendo de nombre "enterarte".
+>>>>>>> develop
 ```
 
 
@@ -57,6 +59,7 @@ Una ves creado el usuario volvemos a activar el servidor, ``` py manage.py runse
 Cuando accedemos a la ip por defecto ```http://127.0.0.1:8000/ ``` veremos que django esta corriendo correctamente
 
 Para acceder al panel de django agregamos  ```/admin ``` a la ip quedaria así,  ```http://127.0.0.1:8000/admin ```, nos logueamos con el usuario y el password recientemente creados
+  
 
 
 5. Cuando traemos cambios a nuestro django hay que utilizar el siguiente comando para hacer las migraciones
