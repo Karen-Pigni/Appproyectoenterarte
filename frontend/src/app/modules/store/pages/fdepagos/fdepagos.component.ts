@@ -11,8 +11,8 @@ export class FdepagosComponent implements OnInit{
   @ViewChild('paypal', {static:true}) paypalElement : ElementRef;
 
   producto = {
-    description: "Evento",
-    precio: 599.99,
+    description: "Taller de Musica",
+    precio: 250,
     img: "Img"
   }
 
@@ -27,7 +27,7 @@ export class FdepagosComponent implements OnInit{
             {
               description: this.producto.description,
               amount : {
-                
+
                 value: this.producto.precio
               }
             }
