@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+
+### BackEnd:
+
+
+Luego de clonar el repositorio sera necesario crear un entorno virtual, por lo que es necesario instalar virtualenv:
+
+```
+pip install virtualenv
+```
+Le decimos a Python que vamos a usar un entorno virtual y que cree la carpeta “venv“ para contenerlo:
+```
+python -m virtualenv venv
+```
+Activamos el entorno virtual, en windows ```.\venv\Scripts\activate```, en linux ```./venv/Scripts/activate```
+=======
 # enterArte Backend
 
 1. Para correr el proyecto instalar un entorno virtual:
@@ -20,6 +36,7 @@ python -m virtualenv env
    
 
 3. Quitar el ".dist" del titulo de del archivo `.env` dentro de la carpeta "core" y completar los campos con varibles de entorno de preferencia y las API Keys necesarias.
+>>>>>>> develop
 
 Con el entorno virtual activado, debemos intalar DJANGO y las librerias necesarias para el proyecto
 
@@ -32,10 +49,35 @@ O también pueden instalarlos de la siguiente forma
 pip install django djangorestframework django-cors-headers mysqlclient pillow django-rest-passwordreset django-allauth python-decouple
 ```
 
+<<<<<<< HEAD
+Para poder ejecutar el stack de backend, ademas de contar con Python instalado, es necesario una base de datos MySQL corriendo de nombre "enterarte". Una manera sencilla de tener una base de datos mySQL es mediante Docker, que una vez instaldo solo sera necesario ejecutar el siguiente comandos
+
+```
+docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root mysql
+```
+
+Ahora podemos abrir una nueva terminal y ejecutar los siguientes comandos para ingresar a la base de datos desde docker
+```
+docker exec -it mysql bash
+```
+```
+mysql -u root -p 
+```
+Nos deberia pedir la contraseña.
+
+
+En el bash de MySQL ejecutamos los siguientes comandos
+```
+CREATE DATABASE enterarte;
+```
+```
+USE enterarte;
+=======
 4. En caso de ser necesario realizar las migraciones correspondientes:
 
 
 Para poder ejecutar el stack de backend, ademas de contar con Python instalado, es necesario una base de datos MySQL corriendo de nombre "enterarte".
+>>>>>>> develop
 ```
 
 
@@ -48,6 +90,10 @@ py manage.py migrate
 Podemos volver al Bash de MySQL y ejecutar `show tables;` y deberiamos obtener algo similar a lo siguiente que confirman la estructura de la base de datos
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> develop
 Nuevamente en nuestro entorno virtual pasaremos a crear un superusuario con el siguiente comando
 
 ```py manage.py createsuperuser```, Nos pedira un usuario un password, la confirmación del password y un correo
@@ -58,6 +104,12 @@ Cuando accedemos a la ip por defecto ```http://127.0.0.1:8000/ ``` veremos que d
 
 Para acceder al panel de django agregamos  ```/admin ``` a la ip quedaria así,  ```http://127.0.0.1:8000/admin ```, nos logueamos con el usuario y el password recientemente creados
 
+<<<<<<< HEAD
+Cuando traemos cambios a nuestro django hay que utilizar el siguiente comando para hacer las migraciones
+```
+py manage.py makemigrations
+```
+=======
 
 5. Cuando traemos cambios a nuestro django hay que utilizar el siguiente comando para hacer las migraciones
 ```
@@ -68,6 +120,7 @@ Correr el proyecto el servidor con el siguiente comando:
 python manage.py runserver
 ```
 
+>>>>>>> develop
 
 
 
