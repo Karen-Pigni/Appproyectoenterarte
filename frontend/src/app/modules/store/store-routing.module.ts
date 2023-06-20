@@ -8,6 +8,8 @@ import { AccessDeniedComponent } from 'src/app/shared/access-denied/access-denie
 import { SuccessfulCheckoutComponent } from 'src/app/shared/successful-checkout/successful-checkout.component';
 import { CancelCheckoutComponent } from 'src/app/shared/cancel-checkout/cancel-checkout.component';
 import { NotFoundComponent } from 'src/app/shared/not-found/not-found.component';
+import { FdepagosComponent } from './pages/fdepagos/fdepagos.component';
+
 
 import { AuthGuard } from 'src/app/guards/user-auth.guard';
 
@@ -15,6 +17,9 @@ const routes: Routes = [
   { path: 'store', component: StoreComponent },
   { path: 'product/:slug', component: ProductDetailComponent },
   { path: 'cart', component: CartComponent },
+  {path:'pagos',
+  component: FdepagosComponent
+  },
   { path: 'access-denied', component: AccessDeniedComponent },
   {
     path: 'success',
