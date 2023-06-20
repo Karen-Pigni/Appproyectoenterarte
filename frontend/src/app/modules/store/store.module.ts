@@ -6,6 +6,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { FdepagosComponent } from './pages/fdepagos/fdepagos.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CartComponent } from './pages/cart/cart.component';
     ProductItemComponent,
     StoreComponent,
     CartComponent,
+    FdepagosComponent
   ],
   exports: [StoreRoutingModule],
   imports: [CommonModule],
