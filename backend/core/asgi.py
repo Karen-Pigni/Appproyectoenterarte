@@ -11,10 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-<<<<<<<< HEAD:backend/enterarteback/asgi.py
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'enterarteback.settings')
-========
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
->>>>>>>> develop:backend/core/asgi.py
 
 application = get_asgi_application()
