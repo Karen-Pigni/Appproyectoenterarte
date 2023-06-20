@@ -92,6 +92,11 @@
                         *ngIf="invalidForm && eventForm.get('gender')?.errors?.['required']">
                         Este campo es obligatorio
                     </p>
+                    <p 
+                        class="text-success m-0" 
+                        *ngIf="eventForm.get('gender')?.errors?.['required']&& invalidForm">
+                        Este campo es obligatorio
+                    </p>
                 </div>
                 <div class="col-xxl-4 col-lg-6 col-md-12 my-1">
                     <label for="nombre" class="form-label">Provincia</label>
