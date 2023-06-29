@@ -9,7 +9,7 @@ import { AdminModule } from './modules/admin/admin.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ProfileModule } from './modules/profile/profile.module';
 import { HomeModule } from './modules/home/home.module';
-import { EventsModule } from './modules/events/events.module';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +22,6 @@ import { EventsModule } from './modules/events/events.module';
     ProfileModule,
     AdminModule,
     StoreModule,
-    EventsModule,
     RouterModule
   ],
   providers: [],
